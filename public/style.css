@@ -21,16 +21,19 @@ body {
   background: var(--blue);
   padding: 32px 24px 32px;
   text-align: center;
+  position: relative;
 }
 
 .logo {
-  width: 160px;
+  width: 320px;
   background: var(--white);
   border-radius: 16px;
   padding: 12px;
-  margin: 0 auto 16px;
   display: block;
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
 .hero h1 {
@@ -39,7 +42,7 @@ body {
   text-transform: uppercase;
   font-size: 48px;
   line-height: 1;
-  margin: 0;
+  margin: 360px 0 0;
   letter-spacing: -1px;
 }
 
