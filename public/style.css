@@ -11,7 +11,8 @@
 
 body {
   font-family: "Archivo", sans-serif;
-  background: var(--blue);
+  background: var(--blue) url("icons-bg.png") repeat;
+  background-size: 340px 340px;
   color: var(--black);
   margin: 0;
   padding-bottom: 48px;
