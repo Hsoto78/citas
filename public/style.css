@@ -19,9 +19,8 @@ body {
 
 .hero {
   background: var(--blue);
-  padding: 24px 24px 0;
+  padding: 24px 24px 32px;
   position: relative;
-  min-height: 380px;
 }
 
 .logo {
@@ -48,16 +47,6 @@ body {
   letter-spacing: -1px;
 }
 
-@media (max-width: 700px) {
-  .hero {
-    min-height: 0;
-  }
-
-  .hero h1 {
-    margin-top: 360px;
-  }
-}
-
 main {
   max-width: 480px;
   margin: 0 auto;
@@ -65,6 +54,18 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media (min-width: 701px) and (max-width: 1151px) {
+  main {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    margin-top: 360px;
+  }
 }
 
 .card {
