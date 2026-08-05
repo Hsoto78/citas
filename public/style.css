@@ -19,7 +19,8 @@ body {
 }
 
 .hero {
-  background: var(--blue);
+  background: var(--blue) url("icons-bg.png") repeat;
+  background-size: 340px 340px;
   padding: 24px 24px 32px;
   position: relative;
 }
@@ -46,6 +47,9 @@ body {
   max-width: 480px;
   text-align: center;
   letter-spacing: -1px;
+  background: var(--blue);
+  padding: 8px 16px;
+  border-radius: 12px;
 }
 
 main {
