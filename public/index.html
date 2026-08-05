@@ -3,44 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sistema de Citas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Sistema de Citas</h1>
+  <header class="hero">
+    <img src="logo.svg" alt="Kid's Connections Learning Solutions" class="logo" />
+    <h1>Sistema<br />de Citas</h1>
+  </header>
 
-  <section>
-    <h2>Crear solicitud</h2>
-    <form id="form-crear">
-      <label>
-        Nombre
-        <input type="text" id="nombre" required />
-      </label>
-      <label>
-        Contacto
-        <input type="text" id="contacto" required />
-      </label>
-      <label>
-        Fecha y hora
-        <input type="datetime-local" id="fecha_hora" required />
-      </label>
-      <button type="submit">Crear solicitud</button>
-    </form>
-    <p id="resultado-crear"></p>
-  </section>
+  <main>
+    <section class="card">
+      <h2>Crear solicitud</h2>
+      <form id="form-crear">
+        <label>
+          Nombre
+          <input type="text" id="nombre" required />
+        </label>
+        <label>
+          Contacto
+          <input type="text" id="contacto" required />
+        </label>
+        <label>
+          Fecha y hora
+          <input type="datetime-local" id="fecha_hora" required />
+        </label>
+        <button type="submit">Crear solicitud</button>
+      </form>
+      <p id="resultado-crear" class="resultado"></p>
+    </section>
 
-  <hr />
-
-  <section>
-    <h2>Consultar estado</h2>
-    <form id="form-consultar">
-      <label>
-        Código de seguimiento
-        <input type="text" id="codigo" required />
-      </label>
-      <button type="submit">Consultar</button>
-    </form>
-    <p id="resultado-consultar"></p>
-  </section>
+    <section class="card">
+      <h2>Consultar estado</h2>
+      <form id="form-consultar">
+        <label>
+          Código de seguimiento
+          <input type="text" id="codigo" required />
+        </label>
+        <button type="submit">Consultar</button>
+      </form>
+      <p id="resultado-consultar" class="resultado"></p>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
